@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Spellchain</title>
+  <style>
+    :root {
+      --bg:       #0E1220;
+      --surface:  #161B2E;
+      --border:   #1E2540;
+      --mana:     #7C5CF5;
+      --mana-dim: rgba(124, 92, 245, 0.12);
+      --text-hi:  #F0EEFF;
+      --text-mid: #8888AB;
+      --text-low: #4E4E72;
+      --success:  #2DD4BF;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text-mid);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* dot-grid atmosphere */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(124,92,245,0.10) 1px, transparent 1px);
+      background-size: 28px 28px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    /* ── Header ── */
+    .header {
+      margin-bottom: 48px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--mana-dim);
+      border: 1px solid rgba(124,92,245,0.35);
+      color: var(--mana);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 2.5px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    .header h1 {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--text-hi);
+      letter-spacing: -0.5px;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .header h1 span {
+      color: var(--mana);
+    }
+
+    .meta {
+      font-size: 12px;
+      color: var(--text-low);
+    }
+
+    .meta a {
+      color: var(--mana);
+      text-decoration: none;
+    }
+
+    /* ── Sections ── */
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 16px;
+    }
+
+    .section h2 {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: var(--mana);
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    .section p {
+      margin-bottom: 12px;
+    }
+
+    .section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .section ul li {
+      padding: 5px 0 5px 18px;
+      position: relative;
+    }
+
+    .section ul li::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      color: var(--mana);
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    /* highlight box */
+    .highlight {
+      background: var(--mana-dim);
+      border: 1px solid rgba(124,92,245,0.25);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 14px 0;
+      color: var(--text-hi);
+      font-size: 14px;
+    }
+
+    .highlight strong {
+      color: var(--mana);
+    }
+
+    /* AdMob notice */
+    .admob-notice {
+      background: rgba(45, 212, 191, 0.07);
+      border: 1px solid rgba(45, 212, 191, 0.25);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 14px 0;
+      font-size: 14px;
+    }
+
+    .admob-notice strong {
+      color: var(--success);
+    }
+
+    a {
+      color: var(--mana);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    strong {
+      color: var(--text-hi);
+      font-weight: 600;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-low);
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="badge">PRIVACY POLICY</div>
+      <h1>Spellchain<span>.</span></h1>
+      <p class="meta">
+        Effective date: February 27, 2026 &nbsp;·&nbsp;
+        Developer: <a href="https://krkabdelmounaim.github.io/spellchain">krkabdelmounaim</a>
+      </p>
+    </div>
+
+    <!-- Overview -->
+    <div class="section">
+      <h2>Overview</h2>
+      <p>
+        Spellchain is a number-puzzle mobile game. This policy explains what data is collected,
+        how it is used, and your rights as a player.
+      </p>
+      <div class="highlight">
+        <strong>Short version:</strong> Spellchain itself does not collect, transmit, or sell
+        any personal information. All game progress is stored locally on your device.
+      </div>
+    </div>
+
+    <!-- Data we collect -->
+    <div class="section">
+      <h2>Data Collected by the App</h2>
+      <p>Spellchain stores the following data <strong>locally on your device only</strong>, using Android DataStore:</p>
+      <ul>
+        <li>Completed levels and star ratings</li>
+        <li>Best move counts per level</li>
+        <li>Daily challenge results and streak</li>
+        <li>Total spells cast and total wins</li>
+        <li>Which tutorial overlays you have seen</li>
+      </ul>
+      <p>
+        None of this data is transmitted to any server. It never leaves your device.
+        It is deleted when you uninstall the app.
+      </p>
+    </div>
+
+    <!-- Advertising -->
+    <div class="section">
+      <h2>Advertising — Google AdMob</h2>
+      <div class="admob-notice">
+        <strong>Coming soon:</strong> A future update of Spellchain will integrate
+        <strong>Google AdMob</strong> to display ads. This section describes how AdMob
+        handles data once that update is live.
+      </div>
+      <p>
+        Google AdMob is an advertising service provided by Google LLC. When ads are active,
+        AdMob may collect and use data to serve personalised or non-personalised ads, including:
+      </p>
+      <ul>
+        <li>Device identifiers (Advertising ID)</li>
+        <li>IP address and approximate location</li>
+        <li>App interaction data (ad impressions, clicks)</li>
+        <li>Device model, OS version, language</li>
+      </ul>
+      <p>
+        This data is processed by Google under its own privacy policy. We do not have
+        access to this data and do not receive any personally identifiable information
+        from AdMob.
+      </p>
+      <p>
+        You can opt out of personalised ads at any time via your device settings:<br />
+        <strong>Settings → Google → Ads → Opt out of Ads Personalisation</strong>
+      </p>
+      <p>
+        Google's privacy policy:
+        <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a><br />
+        Google AdMob partner policy:
+        <a href="https://support.google.com/admob/answer/6128543" target="_blank">support.google.com/admob</a>
+      </p>
+    </div>
+
+    <!-- Third-party services -->
+    <div class="section">
+      <h2>Third-Party Services</h2>
+      <p>Currently, Spellchain uses <strong>no third-party SDKs</strong> that transmit data. The only external service planned is Google AdMob (see above). We will update this policy before that update ships.</p>
+    </div>
+
+    <!-- Children -->
+    <div class="section">
+      <h2>Children's Privacy</h2>
+      <p>
+        Spellchain is suitable for all ages. We do not knowingly collect personal information
+        from children under 13 (or the applicable age in your region). Because no personal data
+        is collected by the app itself, Spellchain is compliant with COPPA and similar regulations.
+      </p>
+      <p>
+        When AdMob is integrated, ads will be configured as child-appropriate and will use
+        non-personalised ad serving where required by law.
+      </p>
+    </div>
+
+    <!-- Data retention -->
+    <div class="section">
+      <h2>Data Retention &amp; Deletion</h2>
+      <p>
+        All locally stored game data is retained on your device until you uninstall the app.
+        Uninstalling the app permanently deletes all saved progress.
+        There is no account system and no server-side backup.
+      </p>
+    </div>
+
+    <!-- Changes -->
+    <div class="section">
+      <h2>Changes to This Policy</h2>
+      <p>
+        We may update this privacy policy when new features (such as AdMob integration) are
+        released. The effective date at the top of this page will always reflect the latest version.
+        Continued use of the app after changes constitutes acceptance of the updated policy.
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <div class="section">
+      <h2>Contact</h2>
+      <p>
+        If you have any questions about this privacy policy, please open an issue or contact us via
+        GitHub:
+        <a href="https://github.com/krkabdelmounaim" target="_blank">github.com/krkabdelmounaim</a>
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      &copy; 2026 krkabdelmounaim &nbsp;·&nbsp; Spellchain &nbsp;·&nbsp;
+      <a href="https://krkabdelmounaim.github.io/spellchain">krkabdelmounaim.github.io/spellchain</a>
+    </div>
+
+  </div>
+</body>
+</html>
